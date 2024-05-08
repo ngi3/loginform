@@ -1,31 +1,35 @@
 import React from 'react';
 import './LoginForm.css';
 import { FaUser,FaLock } from "react-icons/fa";
+/*import img1 from './Components/Assets/logo.svg';*/
+import logo from '../Assets/frame39570.png';
 
 export const LoginForm = () => {
   return (
     <div className='wrapper'>
         <form>
-            <h1>Login</h1>
+            {/* <img src={img1}/> */}
+            {/* <h1>Connexion</h1> */}
+            <div className='toulou'>
+                <img src={logo} alt="" />
+            </div>
             <div className="input-box">
-                <input type="text" placeholder='Username' required />
+                <label>Entrez votre identifiant</label><input type="text" placeholder='Identifiant' required />
                 <FaUser className='icon' />
             </div>
             <div className="input-box">
-                <input type="password" placeholder='Password' required />
+            <label>Entrez votre mot de passe</label><input type="password" placeholder='Mot de passe' required />
                 <FaLock className='icon'/>
             </div>
 
             <div className="remember-forgot">
-                <label><input type='checkbox'/>Remember me</label>
+            <input type='checkbox'/><label>Se souvenir de moi</label>
                 <a href="#">Forgot password?</a>
             </div>
 
-            <button type='submit'>Login</button>
+            <button type='submit'>Se connecter</button>
 
-            <div className="register-link">
-                <p>Don't Have an account? <a href="#">Register</a></p>
-            </div>
+            
         </form>
     </div>
   );
