@@ -2,7 +2,7 @@ import React from "react";
 import Btn from "../Btn/Btn";
 export const AddForm = () => {
   return (
-    <div className="w-screen flex justify-center items-center">
+    <div className="w-full flex justify-center items-center">
       <form className="w-1/3 flex flex-col space-y-5 mt-9 ">
         <div className="flex flex-col ">
           <label className="text-gray-600 font-thin" htmlFor="">

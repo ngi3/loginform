@@ -9,12 +9,12 @@ import logo from "../Assets/toulou.svg"
 import { MENU_LINKS } from "../../lib/consts/navigation";
 function Menu() {
   return (
-    <div className="min-h-screen w-50 p-3 flex flex-col items-center">
+    <aside className="min-h-screen p-3 flex flex-col items-center fixed top-0">
       <div >
         <img  src={logo} />
       </div>
 
-      <div>
+      <nav>
         {MENU_LINKS.map((item) => (
           <a className="p-4 " href={item.chemin}>
             <img className="my-3" src={item.image} alt="" />
@@ -25,8 +25,8 @@ function Menu() {
           <img src={analyse} alt="" />
           <img src={archive}/>
           <img src={parametre} alt="" />  */}
-      </div>
-    </div>
+      </nav>
+    </aside>
   );
 }
 
