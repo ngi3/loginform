@@ -8,7 +8,7 @@ import { Outlet } from "react-router-dom";
 
 export const AddGeForm = () => {
   return (
-    <div className="flex bg-neutral-100 min-h-screen w-full ">
+    <div className="flex  min-h-screen w-full ">
       <Menu />
 
       <div className="pl-14 w-full">

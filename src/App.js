@@ -9,6 +9,8 @@ import React, { Component }  from 'react';
 // import Header from './Components/Header/Header';
 import AddGeForm from './Components/AddGeForm/AddGeForm';
 import AddForm from './Components/AddForm/AddForm';
+import { TableContainer } from './Components/TableContainer/TableContainer';
+import { View } from './Components/View/View';
 import {
   BrowserRouter as Router,
   Routes,
@@ -33,7 +35,10 @@ function App() {
    <Router>
     <Routes>
       <Route path='/' element={<AddGeForm/>}>
-        <Route index element={<AddForm/>} />
+        <Route path='addform' element={<AddForm/>} />
+        <Route path='tablecontainer' element={<TableContainer/>} />
+        <Route path='aperçu' element={<View/>} />
+        <Route/>
       </Route>
     </Routes>
    </Router>

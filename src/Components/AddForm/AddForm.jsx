@@ -37,7 +37,7 @@ export const AddForm = () => {
           <option value=""></option>
         </select>
         <div className="text-center">
-          <Btn text={"Enregistrer le groupe"} />
+          <Btn text="Enregistrer le groupe" backgroundColor='#ED8B3B'color='fff'/>
         </div>
       </form>
     </div>
